@@ -6,58 +6,31 @@ The plugin bundles Raindrop's [shared skills](https://github.com/raindrop-ai/ski
 
 ## Install
 
+Marketplace listings are being prepared. These installation steps apply after Raindrop is published.
+
 ### Claude Code
 
 ```bash
-claude plugin marketplace add raindrop-ai/ai-plugin
-claude plugin install raindrop@raindrop
+claude plugin install raindrop@claude-plugins-official
 ```
 
-Start Claude Code, run `/mcp`, select the Raindrop server, and authenticate in your browser. Start a new session after installation.
+You can also find **Raindrop** in `/plugin` → **Discover**. Run `/mcp`, select Raindrop, and sign in through your browser.
 
 ### Codex
 
-```bash
-codex plugin marketplace add raindrop-ai/ai-plugin
-codex plugin add raindrop@raindrop
-```
-
-You can also browse the added marketplace through `/plugins` in Codex. Follow the Raindrop authentication prompt and start a new task after installing.
+Open the plugin directory in Codex, or run `/plugins` in the CLI. Find **Raindrop**, install it, and follow the authentication prompt. Start a new task after installing.
 
 ### Cursor
 
-For a local installation, clone this repository and copy its plugin into Cursor's local plugin directory:
-
-```bash
-git clone https://github.com/raindrop-ai/ai-plugin.git
-mkdir -p ~/.cursor/plugins/local
-cp -R ./ai-plugin/plugins/raindrop ~/.cursor/plugins/local/raindrop
-```
-
-Reload Cursor, open **Customize**, and authenticate Raindrop's MCP connection. Local plugin imports must be allowed by your organization. Teams can also import this repository through **Dashboard → Plugins → Add Marketplace → Import from Repo**. See [Cursor's plugin guide](https://cursor.com/docs/plugins).
-
-A public marketplace listing requires a separate submission to Cursor. If local plugins are unavailable, use the [Raindrop MCP guide](https://raindrop.ai/docs/mcp/overview) and install the standalone skills below.
+Find **Raindrop** in the [Cursor Marketplace](https://cursor.com/marketplace) or Cursor's plugin browser, select **Install**, and authenticate the Raindrop connection.
 
 ### Gemini CLI
 
-Install the shared plugin directory as a local extension:
-
 ```bash
-git clone https://github.com/raindrop-ai/ai-plugin.git
-gemini extensions install ./ai-plugin/plugins/raindrop
+gemini extensions install https://github.com/raindrop-ai/ai-plugin
 ```
 
-Start Gemini CLI and run `/mcp auth raindrop` to sign in. The extension includes the same three skills. To update, pull this checkout and run `gemini extensions update raindrop`.
-
-### Other assistants
-
-Use the [Raindrop MCP guide](https://raindrop.ai/docs/mcp/overview) with an assistant that supports Streamable HTTP and OAuth. Install standalone skills with:
-
-```bash
-npx skills add raindrop-ai/skills
-```
-
-Choose the skills and clients you want in the installer. A standalone skill installation does not configure MCP. If you already installed this plugin, its bundled skills are sufficient.
+Run `/mcp auth raindrop` to sign in. Update with `gemini extensions update raindrop`.
 
 ## Try it
 

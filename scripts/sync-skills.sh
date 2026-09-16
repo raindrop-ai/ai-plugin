@@ -9,7 +9,7 @@ git clone --quiet --depth 1 https://github.com/raindrop-ai/skills.git "$source_d
 mkdir "$source_dir/skills"
 for skill in "$source_dir"/upstream/raindrop-*/; do
   if [ -f "$skill/SKILL.md" ]; then
-    cp -R "$skill" "$source_dir/skills/"
+    cp -R "${skill%/}" "$source_dir/skills/"
   fi
 done
 
@@ -18,6 +18,6 @@ if [ -z "$(ls -A "$source_dir/skills")" ]; then
   exit 1
 fi
 
-mkdir -p "$repo_root/plugins/raindrop/skills"
-rsync -a --delete "$source_dir/skills/" "$repo_root/plugins/raindrop/skills/"
+mkdir -p "$repo_root/skills"
+rsync -a --delete "$source_dir/skills/" "$repo_root/skills/"
 echo "Synced skills from $(git -C "$source_dir/upstream" rev-parse --short HEAD)."

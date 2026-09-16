@@ -1,6 +1,6 @@
 {
   "name": "raindrop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Instrument AI applications, investigate agent behavior, and refine signals with Raindrop.",
   "mcpServers": {
     "raindrop": {
