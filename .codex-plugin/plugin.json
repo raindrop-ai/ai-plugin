@@ -1,0 +1,43 @@
+{
+  "name": "raindrop",
+  "version": "0.1.1",
+  "description": "Instrument AI applications, investigate agent behavior, and refine signals with Raindrop.",
+  "author": {
+    "name": "Raindrop",
+    "url": "https://raindrop.ai"
+  },
+  "homepage": "https://raindrop.ai/docs/mcp/overview",
+  "repository": "https://github.com/raindrop-ai/ai-plugin",
+  "keywords": [
+    "raindrop",
+    "observability",
+    "ai-agents",
+    "tracing",
+    "signals",
+    "evals",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Raindrop",
+    "shortDescription": "Monitoring and debugging for AI agents",
+    "longDescription": "Connect your coding assistant to Raindrop. Add observability to your application, investigate events and traces, refine signals, and work with evals using Raindrop's live tools and shared skills.",
+    "developerName": "Raindrop",
+    "category": "Developer tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://raindrop.ai",
+    "privacyPolicyURL": "https://raindrop.ai/docs/security/privacy-policy",
+    "termsOfServiceURL": "https://raindrop.ai/docs/security/terms-of-use",
+    "defaultPrompt": [
+      "Set up Raindrop in this project",
+      "Investigate why this signal is firing",
+      "Help me evaluate my agent's responses"
+    ],
+    "brandColor": "#000000",
+    "logo": "./assets/logo.svg"
+  }
+}
