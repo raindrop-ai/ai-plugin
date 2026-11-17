@@ -1,13 +1,13 @@
 {
   "name": "raindrop",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Instrument AI applications, investigate agent behavior, and refine signals with Raindrop.",
   "author": {
-    "name": "Raindrop",
-    "url": "https://raindrop.ai"
+    "name": "Raindrop"
   },
   "homepage": "https://raindrop.ai/docs/mcp/overview",
   "repository": "https://github.com/raindrop-ai/ai-plugin",
+  "license": "MIT",
   "keywords": [
     "raindrop",
     "observability",
@@ -20,5 +20,6 @@
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "displayName": "Raindrop",
-  "logo": "assets/logo.svg"
+  "logo": "assets/logo.svg",
+  "category": "integrations"
 }

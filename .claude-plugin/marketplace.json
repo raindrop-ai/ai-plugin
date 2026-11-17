@@ -1,0 +1,17 @@
+{
+  "name": "raindrop",
+  "owner": {
+    "name": "Raindrop",
+    "url": "https://raindrop.ai"
+  },
+  "metadata": {
+    "description": "Instrument AI applications, investigate agent behavior, and refine signals with Raindrop."
+  },
+  "plugins": [
+    {
+      "name": "raindrop",
+      "source": "./",
+      "description": "Instrument AI applications, investigate agent behavior, and refine signals with Raindrop."
+    }
+  ]
+}
