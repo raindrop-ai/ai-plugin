@@ -6,7 +6,30 @@ The plugin bundles Raindrop's [shared skills](https://github.com/raindrop-ai/ski
 
 ## Install
 
-Marketplace listings are being prepared. These installation steps apply after Raindrop is published.
+Marketplace listings are being prepared. Until then, install from this repository.
+
+### Install from this repository
+
+Claude Code:
+
+```bash
+claude plugin marketplace add raindrop-ai/ai-plugin
+claude plugin install raindrop@raindrop
+```
+
+Codex:
+
+```bash
+codex plugin marketplace add raindrop-ai/ai-plugin
+```
+
+Then run `/plugins`, find **Raindrop**, and install it.
+
+Cursor (Teams and Enterprise): open the dashboard, go to **Plugins & MCPs**, select **Add Marketplace**, then **Import from Repo**, and enter this repository's URL.
+
+Gemini CLI: use the command in the Gemini CLI section below.
+
+The marketplace steps below apply after Raindrop is published.
 
 ### Claude Code
 
