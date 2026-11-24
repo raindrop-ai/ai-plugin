@@ -8,7 +8,7 @@ The plugin bundles Raindrop's [shared skills](https://github.com/raindrop-ai/ski
 
 ### Claude
 
-Raindrop is listed in the [Anthropic Directory](https://claude.ai/plugins/id/plugin_01PEFQ84tvzUNRHPxaaC7Hv8).
+Raindrop is listed in the [Anthropic Directory](https://claude.ai/directory/raindrop-ai).
 
 - **claude.ai and Claude Desktop**: open **Customize** → **Plugins**, find **Raindrop**, and select **Add**. The plugin then works in chat, Cowork, and Claude Code with no second install.
 - **Claude Code**: run `/plugin`, open **Discover**, find **Raindrop**, and install it.
