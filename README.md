@@ -39,15 +39,6 @@ gemini extensions install https://github.com/raindrop-ai/ai-plugin
 
 Run `/mcp auth raindrop` to sign in. Update with `gemini extensions update raindrop`.
 
-### Install Claude Code from this repository
-
-To try an unreleased change before it reaches the directory:
-
-```bash
-claude plugin marketplace add raindrop-ai/ai-plugin
-claude plugin install raindrop@raindrop
-```
-
 ## Try it
 
 - “Set up Raindrop in this project.”
