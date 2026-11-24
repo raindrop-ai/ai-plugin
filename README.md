@@ -6,46 +6,30 @@ The plugin bundles Raindrop's [shared skills](https://github.com/raindrop-ai/ski
 
 ## Install
 
-Marketplace listings are being prepared. Until then, install from this repository.
+### Claude
 
-### Install from this repository
+Raindrop is listed in the [Anthropic Directory](https://claude.ai/plugins/id/plugin_01PEFQ84tvzUNRHPxaaC7Hv8).
 
-Claude Code:
+- **claude.ai and Claude Desktop**: open **Customize** → **Plugins**, find **Raindrop**, and select **Add**. The plugin then works in chat, Cowork, and Claude Code with no second install.
+- **Claude Code**: run `/plugin`, open **Discover**, find **Raindrop**, and install it.
 
-```bash
-claude plugin marketplace add raindrop-ai/ai-plugin
-claude plugin install raindrop@raindrop
-```
+On Team and Enterprise plans, an Owner decides whether members can add plugins from the directory.
 
-Codex:
+After you install, run `/mcp` in Claude Code, select Raindrop, and sign in through your browser. In claude.ai, sign in when Claude first asks to connect.
+
+### Codex
 
 ```bash
 codex plugin marketplace add raindrop-ai/ai-plugin
 ```
 
-Then run `/plugins`, find **Raindrop**, and install it.
-
-Cursor (Teams and Enterprise): open the dashboard, go to **Plugins & MCPs**, select **Add Marketplace**, then **Import from Repo**, and enter this repository's URL.
-
-Gemini CLI: use the command in the Gemini CLI section below.
-
-The marketplace steps below apply after Raindrop is published.
-
-### Claude Code
-
-```bash
-claude plugin install raindrop@claude-plugins-official
-```
-
-You can also find **Raindrop** in `/plugin` → **Discover**. Run `/mcp`, select Raindrop, and sign in through your browser.
-
-### Codex
-
-Open the plugin directory in Codex, or run `/plugins` in the CLI. Find **Raindrop**, install it, and follow the authentication prompt. Start a new task after installing.
+Then run `/plugins`, find **Raindrop**, install it, and follow the sign-in prompt. Start a new task after installing.
 
 ### Cursor
 
-Find **Raindrop** in the [Cursor Marketplace](https://cursor.com/marketplace) or Cursor's plugin browser, select **Install**, and authenticate the Raindrop connection.
+Teams and Enterprise: open the dashboard, go to **Plugins & MCPs**, select **Add Marketplace**, then **Import from Repo**, and enter this repository's URL.
+
+Until Raindrop is listed in the [Cursor Marketplace](https://cursor.com/marketplace), other Cursor users can add `https://mcp.raindrop.ai/mcp` as an MCP server. That adds the tools without the skills.
 
 ### Gemini CLI
 
@@ -54,6 +38,15 @@ gemini extensions install https://github.com/raindrop-ai/ai-plugin
 ```
 
 Run `/mcp auth raindrop` to sign in. Update with `gemini extensions update raindrop`.
+
+### Install Claude Code from this repository
+
+To try an unreleased change before it reaches the directory:
+
+```bash
+claude plugin marketplace add raindrop-ai/ai-plugin
+claude plugin install raindrop@raindrop
+```
 
 ## Try it
 
